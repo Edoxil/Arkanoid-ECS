@@ -38,7 +38,7 @@ namespace Arkanoid
             _container.Inject(winConditionSystem);
             _container.Inject(scoreSystem);
 
-
+            
             _systemGroup.AddSystem(gameStartSystem);
             _systemGroup.AddSystem(playerInputSystem);
             _systemGroup.AddSystem(movingSyastem);

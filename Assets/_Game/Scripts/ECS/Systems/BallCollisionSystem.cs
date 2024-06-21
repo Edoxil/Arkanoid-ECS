@@ -95,9 +95,6 @@ namespace Arkanoid
             Collider blockCollider = contact.otherCollider;
             Vector3 blockPos = blockCollider.transform.position;
 
-            Vector3 dirTocontact = (contactPoint - blockPos).normalized;
-            Vector3 contactEndPoint = blockPos + dirTocontact;
-
 
             Vector3 leftBot = new Vector3(blockPos.x - blockCollider.bounds.size.x * 0.5f, blockPos.y - blockCollider.bounds.size.y * 0.5f);
             Vector3 leftTop = new Vector3(blockPos.x - blockCollider.bounds.size.x * 0.5f, blockPos.y + blockCollider.bounds.size.y * 0.5f);
@@ -118,9 +115,6 @@ namespace Arkanoid
             {
                 direction.direction.y = -direction.direction.y;
             }
-
-
-
 
         }
 
